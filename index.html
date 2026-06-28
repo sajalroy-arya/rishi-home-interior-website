@@ -6,12 +6,10 @@
     <title>Rishi Home Interior | Minimalist Elegance</title>
     <meta name="description" content="Award-winning interior design and modular kitchen services in Noida.">
     
-    <!-- Apple-style Font (Inter as a fallback for San Francisco) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,69 +24,91 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Immersive with left floating card) -->
     <header class="hero" id="home">
-        <div class="hero-content fade-in-up">
-            <div class="badge">Noida, UP</div>
-            <h2 class="hero-title">Redefining Space.</h2>
-            <p class="hero-subtitle">Meticulously crafted interiors and modular kitchens, designed for those who appreciate understated elegance.</p>
-            <div class="hero-actions">
-                <a href="#booking" class="btn btn-primary">Book Consultation</a>
-                <a href="#portfolio" class="btn btn-link">View Projects</a>
+        <div class="hero-bg">
+            <img src="assets/hero_bg.png" alt="Premium Architecture">
+        </div>
+        <div class="hero-container">
+            <div class="hero-card slide-in-left">
+                <div class="badge">Noida, UP</div>
+                <h2 class="hero-title">Redefining<br>Space.</h2>
+                <p class="hero-subtitle">Meticulously crafted interiors and modular kitchens, designed for those who appreciate understated elegance.</p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary">Book Consultation</a>
+                </div>
             </div>
         </div>
     </header>
 
+    <!-- Stats Section (Visual Hierarchy) -->
+    <section class="stats-section section">
+        <div class="stats-grid">
+            <div class="stat-item fade-in-up">
+                <span class="stat-number">5.0</span>
+                <span class="stat-label">Google Rating</span>
+            </div>
+            <div class="stat-item fade-in-up" style="transition-delay: 0.1s">
+                <span class="stat-number">630+</span>
+                <span class="stat-label">Happy Homeowners</span>
+            </div>
+            <div class="stat-item fade-in-up" style="transition-delay: 0.2s">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Custom Designs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section (Split Layout) -->
+    <section class="philosophy section">
+        <div class="split-layout">
+            <div class="split-text slide-in-left">
+                <span class="section-kicker">Our Philosophy</span>
+                <h3>The art of subtraction.</h3>
+                <p>We believe true luxury lies in simplicity. By removing the unnecessary, we allow the essential architecture of your home to breathe, creating spaces that feel vast, serene, and uniquely yours.</p>
+                <a href="#portfolio" class="btn-link">View our aesthetic</a>
+            </div>
+            <div class="split-image slide-in-right">
+                <img src="assets/living_room.png" alt="Minimalist Living Space" loading="lazy">
+            </div>
+        </div>
+    </section>
+
     <!-- Portfolio Section (Horizontal Scroll on Mobile) -->
     <section class="portfolio section" id="portfolio">
+        <div class="section-header fade-in-up">
+            <span class="section-kicker">Portfolio</span>
+            <h3>Selected Works</h3>
+        </div>
         <div class="portfolio-scroll-container">
             <div class="portfolio-grid">
-                <div class="portfolio-card float-effect fade-in-up">
-                    <div class="img-wrapper">
-                        <img src="assets/living_room.png" alt="Living Spaces" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h4>Living Spaces</h4>
-                        <p>Minimalist</p>
-                    </div>
-                </div>
-                <div class="portfolio-card float-effect fade-in-up" style="transition-delay: 0.1s;">
+                <div class="portfolio-card fade-in-up">
                     <div class="img-wrapper">
                         <img src="assets/kitchen.png" alt="Modular Kitchens" loading="lazy">
                     </div>
                     <div class="card-content">
                         <h4>Kitchens</h4>
-                        <p>Functional</p>
+                        <p>Functional Precision</p>
                     </div>
                 </div>
-                <div class="portfolio-card float-effect fade-in-up" style="transition-delay: 0.2s;">
+                <div class="portfolio-card fade-in-up" style="transition-delay: 0.1s;">
                     <div class="img-wrapper">
                         <img src="assets/bedroom.png" alt="Bedrooms" loading="lazy">
                     </div>
                     <div class="card-content">
                         <h4>Bedrooms</h4>
-                        <p>Serene</p>
+                        <p>Serene Sanctuaries</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof / Reviews Section -->
-    <section class="reviews section" id="reviews">
-        <div class="reviews-container fade-in-up">
-            <div class="rating-header">
-                <div class="score">5.0</div>
-                <p>Based on 632 Google Reviews</p>
-            </div>
-            <div class="review-cards">
-                <div class="review-card">
-                    <p class="quote">"Super design, super quality. The work is truly extraordinary."</p>
-                    <p class="author">Happy Client</p>
-                </div>
-                <div class="review-card">
-                    <p class="quote">"Great work in making and designing kitchens. Super quality."</p>
-                    <p class="author">Satisfied Homeowner</p>
+                <!-- Reusing living room image for a third card just to fill the grid -->
+                <div class="portfolio-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="img-wrapper">
+                        <img src="assets/living_room.png" alt="Living Spaces" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h4>Living Spaces</h4>
+                        <p>Architectural Elegance</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,25 +117,51 @@
     <!-- Services Section -->
     <section class="services section" id="services">
         <div class="section-header fade-in-up">
+            <span class="section-kicker">Services</span>
             <h3>Our Expertise</h3>
-            <p>Comprehensive interior solutions tailored to your lifestyle.</p>
         </div>
         <div class="services-grid fade-in-up">
             <div class="service-item">
+                <span class="service-number">01</span>
                 <h4>Modular Kitchens</h4>
-                <p>Precision-engineered, highly functional culinary spaces.</p>
+                <p>Precision-engineered, highly functional culinary spaces tailored to your workflow.</p>
             </div>
             <div class="service-item">
+                <span class="service-number">02</span>
                 <h4>Architectural Design</h4>
-                <p>Structural planning and spatial optimization.</p>
+                <p>Structural planning and spatial optimization for a cohesive home environment.</p>
             </div>
             <div class="service-item">
+                <span class="service-number">03</span>
                 <h4>Living & Bedrooms</h4>
-                <p>Bespoke furniture and holistic room planning.</p>
+                <p>Bespoke furniture and holistic room planning designed for deep relaxation.</p>
             </div>
             <div class="service-item">
+                <span class="service-number">04</span>
                 <h4>Office Interiors</h4>
-                <p>Modern workspaces designed for deep focus.</p>
+                <p>Modern workspaces designed for deep focus and executive presence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Reviews Section (Refined) -->
+    <section class="reviews section" id="reviews">
+        <div class="split-layout reverse">
+            <div class="split-text slide-in-right">
+                <span class="section-kicker">Client Feedback</span>
+                <h3>Don't just take our word for it.</h3>
+                <div class="review-block">
+                    <p class="quote">"Super design, super quality. The work is truly extraordinary."</p>
+                    <p class="author">— Happy Client</p>
+                </div>
+                <div class="review-block">
+                    <p class="quote">"Great work in making and designing kitchens. Super quality."</p>
+                    <p class="author">— Satisfied Homeowner</p>
+                </div>
+            </div>
+            <div class="split-image slide-in-left">
+                <!-- Using kitchen image here to showcase work alongside reviews -->
+                <img src="assets/kitchen.png" alt="Quality Workmanship" loading="lazy">
             </div>
         </div>
     </section>
@@ -125,7 +171,7 @@
         <div class="booking-container fade-in-up">
             <div class="booking-content">
                 <h3>Start Your Project</h3>
-                <p>Connect with our lead designers.</p>
+                <p>Connect with our lead designers to discuss your vision.</p>
             </div>
             <form id="consultationForm" class="booking-form">
                 <div class="input-group">

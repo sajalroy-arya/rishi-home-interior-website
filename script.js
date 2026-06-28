@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Set current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
     // Scroll Animations using Intersection Observer
-    const animatedElements = document.querySelectorAll('.fade-in-up');
+    const animatedElements = document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right');
     
     const observerOptions = {
         root: null,
